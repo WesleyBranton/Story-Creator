@@ -1,0 +1,48 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at https://mozilla.org/MPL/2.0/. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Story Creator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <form onsubmit="create(); return false;">
+      <h1>Welcome to the story creator!</h1>
+      <p>Please complete the form below and your story will be generated using the information that you want in your story.</p>
+      <label for="mname">Male Name:</label>
+      <input type="text" name="mname" required>
+      <br>
+      <label for="adj1">Adjective:</label>
+      <input type="text" name="adj1" required>
+      <br>
+      <label for="animal">Animal:</label>
+      <input type="text" name="animal" required>
+      <br>
+      <label for="adj2">Adjective:</label>
+      <input type="text" name="adj2" required>
+      <br>
+      <label for="verb">Verb:</label>
+      <input type="text" name="verb" required>
+      <br>
+      <label for="noun">Noun:</label>
+      <input type="text" name="noun" required>
+      <br>
+      <br>
+      <input type="reset" value="Clear">
+      <input type="submit" value="Create Story">
+    </form>
+    
+    <article id="story">
+      <h1>The Tale Of The Programmer</h1>
+      <p>Once upon a time, there was a <span class="adj1">________</span> man named <span class="mname">________</span>. He liked to <span class="verb">________</span> computer programs with his pet <span class="animal">________</span>. On day, <span class="mname">________</span> was on his computer when a <span class="adj2">________</span> <span class="noun">________</span> attacked him. Luckily, <span class="mname">________</span>'s pet <span class="animal">________</span> was able to fight off the <span class="noun">________</span> and save <span class="mname">________</span> from certain death.</p>
+      <hr>
+      <p>Thanks for creating this awesome story. To do it again, please <a href="javascript:location.reload()">click here</a>.</p>
+    </article>
+  </body>
+</html>
